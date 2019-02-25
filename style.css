@@ -1,0 +1,92 @@
+#calculator{
+    /* position: absolute; */
+    width: 400px;
+    border-radius: 10px;
+    /* border-style: solid; */
+    background-color: #badafb;
+    box-shadow: 2px 2px 10px 3px #80808080;
+    margin: auto auto;
+    padding-top: 1px;
+    margin-top: 50px;
+  }
+  
+  div#screen{
+    background-color: #ffffff60;
+    height: 150px;
+    /* width: 100%; */
+    border-radius: 10px;
+    margin : 5px
+  }
+  
+  #screen h2{
+    /* position: absolute; */
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 25px;
+    padding-right: 20px;
+    width: inherit;
+    font-size: 4em;
+    height: 60px;
+  }
+  
+  #screen h3{
+    /* position: absolute; */
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 25px;
+    padding-right: 20px;
+    width: inherit;
+    font-size: 2em;
+    color: #808080;
+    height: 35px;
+  }
+  
+  #keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 3px;
+    padding: 3px;
+  }
+  
+  #keypad button:hover{
+    background-color: rgba(0,0,0,.5) ;
+  }
+  
+  #keypad button:active{
+    background-color: rgba(0,0,0,.5) ;
+    box-shadow: 0px 0px 100px #707070ff inset;
+    color:  #000000aa ;
+  }
+  
+  button{
+    font-size: 40px;
+    font-weight: 800;
+    color:  #ffffffdd ;
+    transition: .2s;
+    border: none;
+    border-radius: 5px;
+    height: 75px;
+    background-color: #0000ff50 ;
+  }
+  
+  button.digit{
+    background-color: #0000ff20;
+  }
+  
+  button.operator{
+      
+  }
+  
+  button#zero{
+    grid-row: 5;
+    grid-column: 1 / span 2;
+  }
+  
+  p , a {
+    margin-top: 50px;
+    text-align: center;
+    color: grey;
+  }
